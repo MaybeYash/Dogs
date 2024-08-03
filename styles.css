@@ -20,32 +20,53 @@ header {
   z-index: 1000;
 }
 
-.nav-links {
-  list-style-type: none;
+/* Navigation styles */
+.navigation {
+  width: 400px;
+  height: 70px;
+  background: #fff;
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
-.nav-links li {
-  margin-right: 1rem;
+.navigation ul {
+  display: flex;
+  width: 350px;
+  list-style: none;
+  height: 70px;
+  position: relative;
+  z-index: 1;
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.navigation ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
 }
 
-.nav-links li a:hover {
-  color: #00bcd4;
-}
-
-.logo {
+.navigation ul li .icon {
+  display: block;
+  line-height: 75px;
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: auto;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--clr);
 }
 
+.navigation ul li .text {
+  display: block;
+  font-size: 0.75rem;
+  color: #333;
+}
+
+/* Hero section */
 .hero {
   background-image: url('hero-bg.jpg');
   background-size: cover;
