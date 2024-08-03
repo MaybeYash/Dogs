@@ -3,87 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sreyanshu - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Welcome Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5a623, #f76b1c, #f52000, #f200ff, #4c00f5);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .logos img {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-            <span class="text">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#about">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="text">Profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="#portfolio">
-            <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
-            <span class="text">Portfolio</span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-            <span class="text">Contact</span>
-          </a>
-        </li>
-      </ul>
+  <div class="content">
+    <h1>Welcome Guys !!</h1>
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo">
     </div>
-  </header>
-
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hello, I'm Sreyanshu</h1>
-      <p>Welcome to my portfolio website</p>
-      <a href="#portfolio" class="btn">View Portfolio</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>I am passionate about creating beautiful and functional websites.</p>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-items">
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Project 1">
-        <div class="overlay">
-          <h3>Project 1</h3>
-          <p>Description of Project 1</p>
-        </div>
-      </div>
-      <!-- Add more portfolio items as needed -->
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="submit.php" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Sreyanshu. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
