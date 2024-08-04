@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let coinCount = 0;
   let coinsPerTap = 1;
-  let level = 1;
+  let level = 0;
   let coinsForNextLevel = 200;
   let boostActive = false;
 
