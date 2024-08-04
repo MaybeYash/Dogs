@@ -49,13 +49,23 @@ body {
   margin-bottom: 20px;
 }
 
-.coin-count {
-  font-size: 2em;
-  margin-bottom: 10px;
-  display: block;
+.coin-balance-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#tap-button, #upgrade-button, #daily-reward-button {
+.coin-count {
+  font-size: 3em;
+}
+
+#tap-button, #upgrade-button, #boost-button, #daily-reward-button {
   background: gold;
   border: none;
   padding: 10px 20px;
@@ -65,7 +75,7 @@ body {
   margin-top: 10px;
 }
 
-#tap-button:hover, #upgrade-button:hover, #daily-reward-button:hover {
+#tap-button:hover, #upgrade-button:hover, #boost-button:hover, #daily-reward-button:hover {
   background: darkgoldenrod;
 }
 
