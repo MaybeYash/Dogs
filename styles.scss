@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background: #0f0c29; /* Dark background */
   color: white;
   font-family: Arial, sans-serif;
   display: flex;
@@ -32,7 +32,7 @@ body {
 
 .level-bar-fill {
   height: 100%;
-  width: 62%;
+  width: 0%; /* Start at 0 and update with JavaScript */
   background-color: gold;
   border-radius: 10px 0 0 10px;
 }
@@ -58,14 +58,14 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #222; /* Dark circle background */
 }
 
 .coin-count {
   font-size: 3em;
 }
 
-#tap-button, #upgrade-button, #boost-button, #daily-reward-button {
+.tap-button {
   background: gold;
   border: none;
   padding: 10px 20px;
@@ -75,7 +75,21 @@ body {
   margin-top: 10px;
 }
 
-#tap-button:hover, #upgrade-button:hover, #boost-button:hover, #daily-reward-button:hover {
+.tap-button:hover {
+  background: darkgoldenrod;
+}
+
+.action-button {
+  background: gold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.action-button:hover {
   background: darkgoldenrod;
 }
 
