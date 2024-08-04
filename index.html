@@ -1,57 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #f5a623, #f76b1c, #f52000, #f200ff, #4c00f5);
-      background-size: 200% 200%;
-      animation: gradientAnimation 10s ease infinite;
-      color: #fff;
-    }
-
-    @keyframes gradientAnimation {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    h1 {
-      font-size: 3rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    .logos {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .logos img {
-      width: 50px;
-      height: 50px;
-      margin: 0 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap to Earn Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="content">
-    <h1>Welcome Guys !!</h1>
-    <div class="logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo">
+    <div id="game-container">
+        <div id="dollar-symbol">
+            <span>$</span>
+        </div>
+        <div id="wallet">
+            <p id="balance">Balance: 0 Coins</p>
+            <button id="tap-button">Tap to Earn</button>
+            <p id="daily-reward">Daily Reward: 0 Coins</p>
+            <p id="time-left">Time Left: 24:00:00</p>
+            <div id="level-container">
+                <p id="level">Level: 1</p>
+                <div id="level-bar">
+                    <div id="level-progress"></div>
+                </div>
+                <p id="level-progress-text">0% to Next Level</p>
+            </div>
+            <div id="upgrade-section">
+                <p id="upgrade-cost">Upgrade Cost: 200 Coins</p>
+                <button id="upgrade-button">Upgrade Per Tap</button>
+            </div>
+        </div>
     </div>
-  </div>
+    <script src="app.js"></script>
 </body>
 </html>
