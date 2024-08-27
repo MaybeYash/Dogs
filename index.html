@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tap Coin Game</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Tap Coin Game</h1>
-      <div class="level-bar">
-        <div class="level-bar-fill"></div>
-        <span class="level-text">Level 0</span>
-      </div>
+    <h1>Crypto Price Tracker</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Coin</th>
+                    <th>Price</th>
+                    <th>24h %</th>
+                    <th>24h Volume</th>
+                    <th>Market Cap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span id="btcLogo"></span></td>
+                    <td><strong>Bitcoin</strong> <span id="btcSymbol">...loading...</span></td>
+                    <td><span id="btcPrice">...loading...</span></td>
+                    <td><span id="btcChange">...loading...</span></td>
+                    <td><span id="btcVol">...loading...</span></td>
+                    <td><span id="btcCap">...loading...</span></td>
+                </tr>
+                <tr>
+                    <td><span id="ethLogo"></span></td>
+                    <td><strong>Ethereum</strong> <span id="ethSymbol">...loading...</span></td>
+                    <td><span id="ethPrice">...loading...</span></td>
+                    <td><span id="ethChange">...loading...</span></td>
+                    <td><span id="ethVol">...loading...</span></td>
+                    <td><span id="ethCap">...loading...</span></td>
+                </tr>
+                <tr>
+                    <td><span id="tonLogo"></span></td>
+                    <td><strong>Toncoin</strong> <span id="tonSymbol">...loading...</span></td>
+                    <td><span id="tonPrice">...loading...</span></td>
+                    <td><span id="tonChange">...loading...</span></td>
+                    <td><span id="tonVol">...loading...</span></td>
+                    <td><span id="tonCap">...loading...</span></td>
+                </tr>
+                <tr>
+                    <td><span id="dogsLogo"></span></td>
+                    <td><strong>Dogs</strong> <span id="dogsSymbol">...loading...</span></td>
+                    <td><span id="dogsPrice">...loading...</span></td>
+                    <td><span id="dogsChange">...loading...</span></td>
+                    <td><span id="dogsVol">...loading...</span></td>
+                    <td><span id="dogsCap">...loading...</span></td>
+                </tr>
+                <tr>
+                    <td><span id="notLogo"></span></td>
+                    <td><strong>Notcoin</strong> <span id="notSymbol">...loading...</span></td>
+                    <td><span id="notPrice">...loading...</span></td>
+                    <td><span id="notChange">...loading...</span></td>
+                    <td><span id="notVol">...loading...</span></td>
+                    <td><span id="notCap">...loading...</span></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="main">
-      <div class="coin-display">
-        <div class="coin-balance-circle">
-          <span class="coin-count">0</span>
-        </div>
-        <button id="tap-button" class="tap-button">Tap to Earn</button>
-      </div>
-      <div class="upgrade-section">
-        <button id="upgrade-button" class="action-button">Upgrade Tap (200 Coins)</button>
-      </div>
-      <div class="boost-section">
-        <button id="boost-button" class="action-button">Boost ×500 (10s)</button>
-      </div>
-    </div>
-    <div class="footer">
-      <button id="daily-reward-button" class="action-button">Daily Reward</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <p style="padding-top: 5px;">Updated: <span id="btcTime">...loading...</span></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="addons.js"></script>
 </body>
 </html>
